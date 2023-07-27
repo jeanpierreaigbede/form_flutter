@@ -71,6 +71,7 @@ class _FormPageState extends State<FormPage> {
                   controller: nameController,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.person,color: Colors.green,size: 20,),
                     hintText: "Votre nom et prenoms",
                     labelText: "Nom",
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
@@ -87,8 +88,10 @@ class _FormPageState extends State<FormPage> {
                 ),
                 const SizedBox(height: 20,),
                 TextFormField(
+
                   controller: emailController,
                   decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.email,color: Colors.green,size: 20,),
                     hintText: "Votre Email",
                       labelText: "Email",
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
@@ -109,6 +112,7 @@ class _FormPageState extends State<FormPage> {
 
                   controller: passwordController,
                   decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.lock,color: Colors.green,),
                     hintText: "Votre mot de passe",
                     labelText: "Mot de pass",
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
